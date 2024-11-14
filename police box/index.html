@@ -27,11 +27,34 @@
                 <li><a href="#"><i class="bi bi-cart3"></i></a></li>
                 <li><a href="#"><i class="bi bi-person-circle"></i></a></li>
             </ul>
+            
+            <!-- Hamborgar -->
+            <button class="menu-oculto" onclick="javascript:abrirNav()">
+                <i class="bi bi-list"></i>
+            </button>
+            <div id="offcanvas" class="menu-oculto" onclick="javascript:fecharNav()">
+                <button class="fechar">
+                    <i class="bi bi-x"></i>
+                </button>
+                <a href="index.html">Inicio</a>
+                <a href="#">Filmes</a>
+                <a href="#">Sobre</a>
+            </div>
         </nav>
     </header>
     <section id="banner">
-        <main class="carrosel-container">
-            <img src="Assets/img/banner_1.jpg" alt="banner1">
+        <main class="carrossel-container">
+            <div class="carrossel">
+                <img src="Assets/img/banner/banner_00.jpg" alt="banner 00">
+                <img src="Assets/img/banner/banner_01.jpg" alt="banner 01">
+                <img src="Assets/img/banner/banner_02.jpg" alt="banner 02">
+                <img src="Assets/img/banner/banner_03.jpg" alt="banner 03 ">
+                <img src="Assets/img/banner/banner_04.jpg" alt="banner 04">
+                <img src="Assets/img/banner/banner_05.jpg" alt="banner 05">
+                <img src="Assets/img/banner/banner_06.jpg" alt="banner 06">
+            </div>
+            <button class="anterior" onclick="javascript:voltarSlide()"><i class="bi bi-arrow-left"></i></button>
+            <button class="proximo" onclick="javascript:proximoSlide()"><i class="bi bi-arrow-right"></i></button>
         </main>
     </section>
     <section id="filmes-recomendados">
@@ -44,7 +67,7 @@
                         <figcaption>
                             <h4>Avatar: O Caminho da Água.</h4>
                             <span class="preco">R$ 15,90</span>
-                            <p class="descricao"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur officiis nisi, quis praesentium fuga ab. Quo, repellendus eaque deleniti in sit voluptatem laborum sapiente. Iste tenetur ducimus ea consequuntur suscipit.</p>
+                            <p class="descricao">Mussum Ipsum, cacilds vidis litro abertis. Admodum accumsan disputationi eu sit. Vide electram sadipscing et per. Per aumento de cachacis, eu reclamis. Paisis, filhis, espiritis santis. Cevadis im ampola pa arma uma pindureta.</p>
                         </figcaption>
                         <span class="genero"> 
                             <label style="background-color: #070373;">Fantasia</label>
@@ -161,12 +184,8 @@
               
             </div>
         </main>
-        <section>
-    <main>
-
-    </main>
-    <footer>
-
-    </footer>
+        <section> 
 </body>
+<script src="Assets/js/carrossel.js"></script>
+<script src="Assets/js/offcanvas.js"></script>
 </html>
